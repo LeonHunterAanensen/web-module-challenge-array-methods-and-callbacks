@@ -53,12 +53,9 @@ function getYears(A,CB) {
       years[i] = S[i].Year
       i++;
       }
-        end(years)
-    function end(years){
+    }
     console.log(years)
      return years  
-    }
-    }
     }
     getYears(fifaData,(getFinals()));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
