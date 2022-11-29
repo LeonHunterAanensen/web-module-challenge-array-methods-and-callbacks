@@ -6,17 +6,22 @@ const { fifaData } = require('./fifa.js')
 Practice accessing data by console.log-ing the following pieces of data note. 
 
 💡 HINT: You may want to filter the data first 😉*/
-
+function FDS(Y,S,R){
+    const Stage  = fifaData.filter(fifaData => fifaData.Stage === S && fifaData.Year === Y );
+      console.log(Stage)
+  let X = Stage 
+    console.log(X[0][R])
+  }
 //(a) Home Team name for 2014 world cup final
-
+console.log(FDS(2014,"Final",['Home Team Name']));
 //(b) Away Team name for 2014 world cup final
-
+console.log(FDS(2014,"Final",['Away Team Name']));
 //(c) Home Team goals for 2014 world cup final
-
+console.log(FDS(2014,"Final",['Home Team Goals']));
 //(d) Away Team goals for 2014 world cup final
-
+console.log(FDS(2014,"Final",['Away Team Goals']));
 //(e) Winner of 2014 world cup final */
-
+console.log(FDS(2014,"Final",['Win conditions']));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use getFinals to do the following:
@@ -25,10 +30,21 @@ Use getFinals to do the following:
 
 💡 HINT - you should be looking at the stage key inside of the objects
 */
-
-function getFinals(/* code here */) {
-    /* code here */
- }
+function getFinals(A) {
+    const Stage  = A.filter(A => A.Stage === "Final");
+        console.log(Stage)
+    let H = []
+    let i = 0; while (i < Stage.length) {
+      console.log(Stage[i]['Home Team Name']);
+      H.push(Stage[i]['Home Team Name'])
+      console.log(Stage[i]['Away Team Name']);
+      H.push(Stage[i]['Away Team Name'])
+      i++;
+    }
+    console.log (H);
+    return H 
+}
+getFinals(fifaData);
 
 
 
