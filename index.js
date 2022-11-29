@@ -40,6 +40,7 @@ function getFinals(A) {
     i++ 
     }
       console.log(H);
+      return H
     }
     getFinals(fifaData);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
