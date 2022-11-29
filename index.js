@@ -32,17 +32,12 @@ Use getFinals to do the following:
 */
 function getFinals(A) {
     const Stage  = A.filter(A => A.Stage === "Final");
-    let H = [{}]
-    let i = 0; while (i < Stage.length) {
-    console.log(Stage[i])
-      H[i]=(Stage[i]['Home Team Name'])
-      H[i]=(Stage[i]['Away Team Name'])
-    i++ 
-    }
-      console.log(H);
-      return H
-    }
-    getFinals(fifaData);
+x = Stage.concat(Stage)
+
+  console.log(x);
+  return x
+}
+getFinals(fifaData);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use the higher-order function called getYears to do the following: 
 1. Receive an array as the first parameter that will take fifaData as an argument
