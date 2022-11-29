@@ -45,8 +45,7 @@ Use the higher-order function called getYears to do the following:
 3. Return an array called years containing all of the years in the getFinals data set*/
 
 function getYears(a,CB) {
-    //console.log(CB,CB.length)
-    let E = (CB.slice(19))
+    let E = (CB)
     console.log(E.length)
     console.log(E);
     let k = []
@@ -56,6 +55,8 @@ function getYears(a,CB) {
     i++;
     }
     console.log(k,k.length )
+    k.splice(19,19)
+    console.log(k,k.length)
     return k
     }
     getYears(fifaData, getFinals(fifaData));
