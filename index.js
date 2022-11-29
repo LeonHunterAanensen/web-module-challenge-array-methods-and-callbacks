@@ -44,19 +44,24 @@ Use the higher-order function called getYears to do the following:
 3. Return an array called years containing all of the years in the getFinals data set*/
 
 function getYears(A,CB) {
-    A = fifaData
+    A = fifaData 
     let x = CB
+    ET(A,x)
+    function ET(A,x) {
     x.splice(19,19)
     console.log(x,x.length)
-     let i = 0; while (i < x.length) {
+     INT(x)
+      function INT(x){
+      let i = 0; while (i < x.length) {
       x[i] = x[i].Year
       i++;
       }
     console.log(x)
       return x 
     }
+    }
+    }
     getYears(fifaData,(getFinals()));
-
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use the higher-order function getWinners to do the following:  
 1. Receive an array as the first parameter that will take fifaData as an argument
