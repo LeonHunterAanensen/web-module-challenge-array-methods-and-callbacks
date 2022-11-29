@@ -33,18 +33,18 @@ Use getFinals to do the following:
 function getFinals(A) {
     const Stage  = A.filter(A => A.Stage === "Final");
         console.log(Stage)
-    let H = []
-    let i = 0; while (i < Stage.length) {
+    let H = {}
+      let i = 0; while (i < Stage.length) {
       console.log(Stage[i]['Home Team Name']);
-      H.push(Stage[i]['Home Team Name'])
+        Array.prototype.push.call(H,Stage[i]['Home Team Name']);
       console.log(Stage[i]['Away Team Name']);
-      H.push(Stage[i]['Away Team Name'])
+        Array.prototype.push.call(H,Stage[i]['Away Team Name']);
       i++;
     }
     console.log (H);
-    return H 
-}
-getFinals(fifaData);
+    return H
+    }
+    getFinals(fifaData);
 
 
 
