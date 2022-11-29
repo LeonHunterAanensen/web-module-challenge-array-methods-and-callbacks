@@ -32,7 +32,7 @@ Use getFinals to do the following:
 */
 function getFinals(A) {
     const Stage  = A.filter(A => A.Stage === "Final");
-x = Stage.concat(Stage)
+let x = Stage.concat(Stage)
 
   console.log(x);
   return x
