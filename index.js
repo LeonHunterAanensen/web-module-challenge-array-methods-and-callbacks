@@ -87,7 +87,7 @@ function getWinners(F,CB) {
           winners[i] = CB[i]['Away Team Name']
           i++;
         } else if(home[i] === away[i]) {
-          winners[i] = 'null'; 
+          winners[i] = CB[i]['Home Team Name']  
           i++ 
         } else {
         console.log ('its a tie')
