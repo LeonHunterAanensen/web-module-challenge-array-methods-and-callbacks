@@ -32,11 +32,38 @@ Use getFinals to do the following:
 */
 function getFinals(A) {
     A = fifaData  
-    let Stage = A.filter(A => A.Stage === "Final");
-  let x = Stage.concat(Stage)
-    return x
+  
+  let Stage = A.filter(A => A.Stage === "Final");
+  let f = []
+  let i = 0; while (i < Stage.length) {
+  let x = Stage[i]  
+    delete x['Datetime']
+    delete x['Year']
+    delete x['Stadium']
+    delete x['City']
+    delete x['Home Team Goals']
+    delete x['Away Team Goals']
+    delete x['Win conditions']
+    delete x['Attendance']
+    delete x['Half-time Home Goals']
+    delete x['Half-time Away Goals']
+    delete x['Referee']
+    delete x['Assistant 1']
+    delete x['Assistant 2']
+    delete x['RoundID']
+    delete x['MatchID']
+    delete x['Home Team Initials']
+    delete x['Away Team Initials']
+    delete x['Stage']
+    f.push(x)
+  i++;
   }
-getFinals(fifaData);
+  console.log (f)
+
+  
+  }
+console.log(getFinals(fifaData));
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use the higher-order function called getYears to do the following: 
 1. Receive an array as the first parameter that will take fifaData as an argument
@@ -82,8 +109,8 @@ Use the higher-order function getWinnersByYear to do the following:
 💡 HINT: the strings returned need to exactly match the string in step 4.
  */
 
-function getWinnersByYear(/* code here */) {
-    /* code here */
+function getWinnersByYear(FD,GF,GY,GW) {
+
 }
 
 
