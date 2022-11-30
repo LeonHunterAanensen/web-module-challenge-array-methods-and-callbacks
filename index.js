@@ -67,40 +67,9 @@ Use the higher-order function getWinners to do the following:
 4. Returns the names of all winning countries in an array called `winners` */ 
 
 function getWinners(F,CB) {
-    console.log(CB.length);
-    let winners = []
-    let home = []
-    let away = []
-    let i = 0; while (i < 19) {
-       home[i] = (CB[i]['Home Team Goals']+CB[i]['Half-time Home Goals'])
-        console.log(home[i],'H')
-       away[i] = (CB[i]['Away Team Goals']+CB[i]['Half-time Away Goals'])
-        console.log(away[i],'A')
-        if(home[i]>away[i]){
-        console.log('h win', CB[i]['Home Team Name'])
-          console.log(CB[i]['Home Team Name'])
-          winners[i] = CB[i]['Home Team Name']
-          i++;
-      } else if(home[i]<away[i]) {
-          console.log('a win', CB[i]['Away Team Name']) 
-          console.log(CB[i]['Away Team Name'])
-          winners[i] = CB[i]['Away Team Name']
-          i++;
-        } else if(home[i] === away[i]) {
-          winners[i] = (i)
-          i++ 
-        } else {
-        console.log ('its a tie')
-          console.log('bug')
-          i++;
-  }
-        }
-  winners[13] =  CB[13]['Away Team Name']
-  winners[16] = CB[16]['Away Team Name']  
-  console.log(winners)
-  return winners
-  }
-  getWinners(fifaData,getFinals())
+    return CB(F).map (item => item['Home Team Goals']> item['Away Team Goals'] ? item['Home Team Name'] : item['Away Team Name']);
+      }
+      console.log(getWinners(fifaData,getFinals));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use the higher-order function getWinnersByYear to do the following:
