@@ -59,7 +59,7 @@ function getFinals(A) {
   i++;
   }
   console.log (f)
-
+return f
   
   }
 console.log(getFinals(fifaData));
