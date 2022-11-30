@@ -67,7 +67,6 @@ Use the higher-order function getWinners to do the following:
 4. Returns the names of all winning countries in an array called `winners` */ 
 
 function getWinners(F,CB) {
-    CB.splice(19,19)  
     console.log(CB.length);
     let winners = []
     let home = []
