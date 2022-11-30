@@ -95,10 +95,8 @@ function getWinners(F,CB) {
           i++;
   }
         }
-  winners[13] =  CB[13]['Home Team Name']
-  winners[16] = CB[16]['Home Team Name']  
-  console.log(winners)
-  winners = ["Uruguay", "Italy", "Italy", "Germany FR", "Brazil", "Brazil", "England", "Brazil", "Germany FR", "Argentina", "Italy", "Argentina", "Germany FR", "Italy", "France", "Brazil", "France", "Spain", "Germany"]
+  winners[13] =  CB[13]['Away Team Name']
+  winners[16] = CB[16]['Away Team Name']  
   console.log(winners)
   return winners
   }
