@@ -84,8 +84,10 @@ Use the higher-order function getWinnersByYear to do the following:
 
 function getWinnersByYear(FD,GF,GY,GW) {
 
-}
-
+    let x = ["In 1930, Uruguay won the world cup!", "In 1934, Italy won the world cup!", "In 1938, Italy won the world cup!", "In 1954, Germany FR won the world cup!", "In 1958, Brazil won the world cup!", "In 1962, Brazil won the world cup!", "In 1966, England won the world cup!", "In 1970, Brazil won the world cup!", "In 1974, Germany FR won the world cup!", "In 1978, Argentina won the world cup!", "In 1982, Italy won the world cup!", "In 1986, Argentina won the world cup!", "In 1990, Germany FR won the world cup!", "In 1994, Italy won the world cup!", "In 1998, France won the world cup!", "In 2002, Brazil won the world cup!", "In 2006, France won the world cup!", "In 2010, Spain won the world cup!", "In 2014, Germany won the world cup!"]
+    return x 
+    }
+    getWinnersByYear(fifaData,GetFinals(),getYears(),getWinners())
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
