@@ -120,7 +120,7 @@ function getAverageGoals(D) {
 (accumulator, currentValue) => accumulator + currentValue,f2);
   y2 = y2/y.length
   y2 = y2.toFixed(2)
-  A = (y2*1) + (x2*1)
+  let A = (y2*1) + (x2*1)
 console.log(A)
 return(A)
 }
