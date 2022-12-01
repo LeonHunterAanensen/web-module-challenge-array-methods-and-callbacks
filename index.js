@@ -105,10 +105,26 @@ Use the higher order function `getAverageGoals` to do the following:
  
 */
 
-function getAverageGoals(/* code here */) {
-    /* code here */
- }
+function getAverageGoals(D) {
+  
+    let f1 = 0
+    let x = (D.map (item => item['Home Team Goals']));
+  let x2 = x.reduce(
+(accumulator, currentValue) => accumulator + currentValue,f1);
+    x2 = x2/x.length
+    x2 = x2.toFixed(2)
 
+    let f2 = 0
+  let y = (D.map (item => item['Away Team Goals']));
+  let y2 = y.reduce(
+(accumulator, currentValue) => accumulator + currentValue,f2);
+  y2 = y2/y.length
+  y2 = y2.toFixed(2)
+  A = (y2*1) + (x2*1)
+console.log(A)
+return(A)
+}
+getAverageGoals(getFinals(fifaData));
 
 
 
