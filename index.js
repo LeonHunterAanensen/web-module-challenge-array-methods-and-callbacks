@@ -121,8 +121,8 @@ function getAverageGoals(D) {
   y2 = y2/y.length
   y2 = y2.toFixed(2)
   let A = (y2*1) + (x2*1)
-console.log(A)
-return(A)
+  console.log(`${A}`)
+  return(`${A}`)
 }
 getAverageGoals(getFinals(fifaData));
 
